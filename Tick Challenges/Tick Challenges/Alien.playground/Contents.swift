@@ -45,13 +45,13 @@ if (aten >= 4 && eye <= 4){
 }
 
 
+} while validInput == false
 
 // Print one additional blank line to separate from exit code message that is automatically displayed
 print("")
 
 
-
-
+ctyvftyhcfhtu
 
 
 
