@@ -1,92 +1,96 @@
-//: Playground - noun: a place where people can play
-
-import Cocoa
-
-var str = "Hello, playground"
-
-var speedLimitGOV = 0;
-var currentSpeed = 0;
+// Swift?
+// More like slow
 
 
-print("Welcome To Speed Man")
-print("Input the speed limit", terminator: "")
-var speedLimit = readLine(stripNewline: true)
+//  main.swift
+//  project2-1
+//
+//  Created by NumberOne on 2016-02-01.
+//  Copyright © 2016 NumberOne. All rights reserved.
+//
 
-if let speed = speedLimit{
-    print("\nOK, \(speed)!")
-}
+import Foundation
 
 
-print("Input your Speed", terminator: "")
-var yourSpeed = readLine(stripNewline: true)
 
-if let ySpeed = speedLimit{
-    print("\nOK, \(ySpeed)!")
-}
 
-var speedLimitInput : Bool          // Status of input
+print("\n")
+
+print("WERE YOU SPEEDING?")
+
+
+
+
+var validInput : Bool
 repeat {
-
-print("\nWhat  is the speed limit?")
-
-var speed = readLine(stripNewline: true)
-
-// Assume valid input
-speedLimitInput = true
-
-if let MPH = speed{
-
-print("")
-
-}
-
-var ySpeedInput : Bool          // Status of input
-repeat {
-
-
-print("\nWhat is your speed?")
-
-var speed = readLine(stripNewline: true)
-
-// Assume valid input
-ySpeedInput = true
-
-if let MPH = speed{
-
-print("")
-
-}
-
-
-    print("What is your speed?")
     
-    var ySpeed = readLine(stripNewline: true)
     
-    // Assume valid input
-    ySpeedInput = true
+    print("\nHOW FAST WAS YOU SUPPOSED TO GO?")
     
-    if let eye = speed{
+    
+    var eyy = readLine(stripNewline: true)
+    
+    
+    validInput = true
+    
+    
+    if let spedlimit = eyy {
+        
         
         print("")
         
     }
     
-    var eye = Float(eyes!)
-    var aten = Float(atennas!)
     
-    if (aten >= 3 && eye <= 4){
+    print("\nHOW FAST WAS YOU?")
+    
+    
+    var lmao = readLine(stripNewline: true)
+    
+    
+    validInput = true
+    
+    
+    if let sped = lmao {
         
-        print(TroyMartian)
         
-    } else if (aten <= 6 && eye > 2){
-        print(VladSaturnian)
-    }else if (aten <= 2 && eye <= 3){
-        print(GraemeMercurian)
+        print("")
+        
     }
+    
+    
+    var sped = Float(lmao!)
+    var spedlimit = Float(eyy!)
+    var overLimit = sped! - spedlimit!
+    var fine = 0
+    
+    if overLimit <= 20 {
+        var fine = 100
+        if  spedlimit > sped {
+            print("\nYa done gud son, yar below the limit")
+        } else if sped > spedlimit {
+            print("\nWHOA son, slow down! Yer fine is $",fine,"!")
+        }
+    } else if overLimit <= 30 && overLimit >= 21 {
+        var fine = 270
+        if  spedlimit > sped {
+            print("\nYa done gud son, yar below the limit")
+        } else if sped > spedlimit {
+            print("\nWHOA son, slow down! Yer fine is $",fine,"!")
+        }
+    } else if overLimit >= 31 {
+        var fine = 500
+        if  spedlimit > sped {
+            print("\nYa done gud son, yar below the limit")
+        } else if sped > spedlimit {
+            print("\nWHOA son, slow down! Yer fine is $",fine,"!")
+        }
+    }
+    
+    
     
     
     
 } while validInput == false
 
-// Print one additional blank line to separate from exit code message that is automatically displayed
-print("")}
+
